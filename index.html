@@ -3,964 +3,954 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aasho | Rooted in Tradition</title>
+  <title>AASHO | Indian Traditional Luxury Fashion</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
-    :root {
-      --maroon: #6f1020;
-      --deep-maroon: #4e0915;
-      --gold: #c79a3b;
-      --soft-gold: #e4c57a;
-      --ivory: #f6efe5;
-      --sand: #eadfce;
-      --brown: #5e4630;
-      --text: #2f241b;
-      --card: rgba(255,255,255,0.7);
-      --shadow: 0 16px 40px rgba(60, 25, 8, 0.12);
-      --radius: 22px;
-    }
-
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
+    * {
       margin: 0;
-      font-family: 'Inter', sans-serif;
-      color: var(--text);
-      background: linear-gradient(180deg, #fbf7f1 0%, #f4eadb 100%);
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    a { text-decoration: none; color: inherit; }
-    img { max-width: 100%; display: block; }
+    html {
+      scroll-behavior: smooth;
+    }
 
-    .topbar {
-      background: var(--deep-maroon);
-      color: #fff5ea;
-      text-align: center;
-      padding: 10px 16px;
-      font-size: 14px;
-      letter-spacing: 0.04em;
+    :root {
+      --gold: #d4af37;
+      --gold-soft: #e8c96b;
+      --ivory: #f5ead7;
+      --black: #0b0b0b;
+      --card: #141414;
+      --muted: #cbbfae;
+      --border: rgba(212, 175, 55, 0.28);
+      --maroon: #7d1f2c;
+      --rose-gold: #c88a6a;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0b0b0b;
+      color: var(--ivory);
+      line-height: 1.6;
+      background-image: radial-gradient(circle at top, rgba(212,175,55,0.08), transparent 28%);
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1180px, 92%);
+      margin: auto;
     }
 
     header {
       position: sticky;
       top: 0;
-      z-index: 50;
-      backdrop-filter: blur(10px);
-      background: rgba(246, 239, 229, 0.9);
-      border-bottom: 1px solid rgba(111, 16, 32, 0.08);
+      z-index: 1000;
+      background: rgba(11, 11, 11, 0.95);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
     }
 
-    .nav {
-      max-width: 1200px;
-      margin: 0 auto;
+    .navbar {
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      padding: 18px 20px;
+      align-items: center;
+      padding: 18px 0;
       gap: 20px;
     }
 
-    .brand-wrap {
+    .brand {
       display: flex;
       align-items: center;
       gap: 14px;
     }
 
-    .horse-logo {
+    .brand-logo {
       width: 58px;
       height: 58px;
       border-radius: 50%;
-      overflow: hidden;
-      border: 2px solid rgba(199,154,59,0.35);
-      box-shadow: 0 6px 16px rgba(111, 16, 32, 0.10);
-      animation: horseFloat 3.2s ease-in-out infinite;
-      background: transparent;
-      flex-shrink: 0;
-      display: grid;
-      place-items: center;
-    }
-
-    .horse-logo img {
-      width: 100%;
-      height: 100%;
       object-fit: cover;
-      object-position: center;
-      display: block;
-      animation: horseGlow 3.2s ease-in-out infinite;
-      border-radius: 50%;
+      border: 1px solid var(--border);
+      background: #000;
     }
 
-    @keyframes horseFloat {
-      0%, 100% { transform: translateY(0) scale(1); }
-      50% { transform: translateY(-6px) scale(1.04); }
-    }
-
-    @keyframes horseGlow {
-      0%, 100% { filter: drop-shadow(0 0 0 rgba(199,154,59,0)); }
-      50% { filter: drop-shadow(0 0 10px rgba(199,154,59,0.45)); }
-    }
-
-    .brand {
+    .brand-text h1 {
+      font-size: 28px;
+      letter-spacing: 4px;
+      color: var(--gold);
       font-family: 'Cinzel', serif;
-      font-size: 38px;
-      color: var(--maroon);
-      letter-spacing: 0.08em;
-      text-transform: lowercase;
-      font-weight: 600;
     }
 
-    .brand small {
-      display: block;
-      font-family: 'Inter', sans-serif;
-      font-size: 11px;
-      letter-spacing: 0.28em;
-      text-transform: uppercase;
-      color: #8a6c50;
-      text-align: center;
-      margin-top: 4px;
-    }
-
-    .menu {
-      display: flex;
-      gap: 22px;
+    .brand-text p {
       font-size: 14px;
-      font-weight: 600;
-      color: #593825;
-      flex-wrap: wrap;
-      justify-content: center;
+      color: var(--muted);
+      font-family: 'Noto Sans Devanagari', sans-serif;
     }
 
-    .menu a:hover { color: var(--maroon); }
-
-    .actions {
+    nav {
       display: flex;
-      gap: 10px;
       align-items: center;
-      font-size: 14px;
+      gap: 28px;
+      font-size: 15px;
+      color: var(--ivory);
+      font-family: 'Inter', sans-serif;
     }
 
-    .icon-btn {
-      border: 1px solid rgba(111, 16, 32, 0.15);
-      background: rgba(255,255,255,0.6);
-      padding: 10px 14px;
+    nav a:hover {
+      color: var(--gold);
+    }
+
+    .nav-btn {
+      padding: 11px 20px;
+      border: 1px solid var(--gold);
+      color: var(--black);
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-soft) 100%);
       border-radius: 999px;
+      font-weight: 700;
+      transition: 0.3s ease;
+      box-shadow: 0 8px 24px rgba(212,175,55,0.18);
+    }
+
+    .nav-btn:hover {
+      background: transparent;
+      color: var(--gold);
     }
 
     .hero {
-      max-width: 1200px;
-      margin: 28px auto;
-      padding: 0 20px;
-    }
-
-    .hero-card {
-      min-height: 600px;
-      border-radius: 34px;
-      overflow: hidden;
-      position: relative;
-      display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
       background:
-        radial-gradient(circle at top left, rgba(228,197,122,0.28), transparent 32%),
-        linear-gradient(135deg, rgba(111,16,32,0.94), rgba(78,9,21,0.92));
-      box-shadow: var(--shadow);
-    }
-
-    .hero-copy {
-      padding: 78px 60px;
-      color: #fff8ef;
+        linear-gradient(90deg, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.44) 42%, rgba(0,0,0,0.76) 100%),
+        url('pic1.jpg') center 18%/cover no-repeat;
+      border-bottom: 1px solid var(--border);
       position: relative;
-      z-index: 2;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      overflow: hidden;
     }
 
-    .eyebrow {
-      color: var(--soft-gold);
-      font-size: 13px;
-      letter-spacing: 0.28em;
-      text-transform: uppercase;
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(212,175,55,0.05), transparent 22%, transparent 78%, rgba(125,31,44,0.18));
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.08fr 0.92fr;
+      gap: 40px;
+      align-items: center;
+      padding: 84px 0 56px;
+      min-height: 100vh;
+      position: relative;
+      z-index: 1;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 9px 18px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: var(--gold-soft);
       margin-bottom: 18px;
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      background: rgba(212, 175, 55, 0.08);
+      text-transform: uppercase;
     }
 
-    h1 {
-      margin: 0;
-      font-family: 'Cinzel', serif;
+    .hero h2 {
       font-size: 66px;
-      line-height: 1.08;
-      max-width: 560px;
+      line-height: 1.05;
+      margin-bottom: 18px;
+      color: var(--ivory);
+      font-family: 'Cinzel', serif;
+      max-width: 700px;
     }
 
-    .hero-copy p {
+    .hero h2 span {
+      color: var(--gold);
+    }
+
+    .hero p {
       font-size: 18px;
-      line-height: 1.8;
-      color: #f6e7d2;
-      max-width: 520px;
-      margin: 22px 0 30px;
+      color: #efe4d2;
+      max-width: 620px;
+      margin-bottom: 28px;
     }
 
-    .hero-buttons {
+    .editorial-note {
+      margin-top: 18px;
+      color: var(--gold-soft);
+      font-family: 'Noto Sans Devanagari', sans-serif;
+      font-size: 15px;
+    }
+
+    .hero-actions {
       display: flex;
-      gap: 16px;
       flex-wrap: wrap;
+      gap: 16px;
     }
 
     .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 15px 24px;
+      display: inline-block;
+      padding: 14px 28px;
       border-radius: 999px;
       font-weight: 700;
-      transition: 0.25s ease;
+      border: 1px solid var(--gold);
+      transition: 0.3s ease;
     }
 
     .btn-primary {
-      background: linear-gradient(135deg, var(--gold), #b78226);
-      color: #2b1708;
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-soft) 100%);
+      color: var(--black);
+      box-shadow: 0 8px 24px rgba(212,175,55,0.22);
     }
 
-    .btn-primary:hover { transform: translateY(-2px); }
+    .btn-primary:hover {
+      background: transparent;
+      color: var(--gold);
+    }
 
     .btn-secondary {
-      border: 1px solid rgba(255,255,255,0.32);
-      color: #fff9f1;
-      background: rgba(255,255,255,0.08);
-    }
-
-    .hero-visual {
-      position: relative;
-      background:
-        linear-gradient(180deg, rgba(234,223,206,0.08), rgba(234,223,206,0.04)),
-        url('https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1200&q=80') center/cover;
-    }
-
-    .hero-badge {
-      position: absolute;
-      right: 28px;
-      bottom: 28px;
-      background: rgba(246,239,229,0.92);
-      color: var(--maroon);
-      padding: 18px 20px;
-      border-radius: 18px;
-      box-shadow: var(--shadow);
-      min-width: 220px;
-    }
-
-    .hero-horse {
-      position: absolute;
-      top: 28px;
-      left: 28px;
-      width: 88px;
-      height: 88px;
-      border-radius: 50%;
-      overflow: hidden;
+      color: var(--gold);
       background: transparent;
-      border: 2px solid rgba(228,197,122,0.55);
-      box-shadow: 0 16px 35px rgba(0,0,0,0.18);
-      animation: heroHorseMove 4s ease-in-out infinite;
-      display: grid;
-      place-items: center;
     }
 
-    .hero-horse img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-      display: block;
-      border-radius: 50%;
+    .btn-secondary:hover {
+      background: var(--gold);
+      color: var(--black);
     }
 
-    @keyframes heroHorseMove {
-      0%, 100% { transform: translateY(0) rotate(0deg); }
-      25% { transform: translateY(-8px) rotate(-2deg); }
-      50% { transform: translateY(0) rotate(0deg) scale(1.03); }
-      75% { transform: translateY(-6px) rotate(2deg); }
+    .hero-card {
+      background: linear-gradient(180deg, rgba(20, 20, 20, 0.76), rgba(20,20,20,0.88));
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: 34px;
+      box-shadow: 0 18px 50px rgba(0,0,0,0.35);
+      position: relative;
+      backdrop-filter: blur(8px);
     }
+
+    .hero-card::before {
+      content: '';
       position: absolute;
-      right: 28px;
-      bottom: 28px;
-      background: rgba(246,239,229,0.92);
-      color: var(--maroon);
-      padding: 18px 20px;
-      border-radius: 18px;
-      box-shadow: var(--shadow);
-      min-width: 220px;
+      inset: 12px;
+      border: 1px solid rgba(212,175,55,0.14);
+      border-radius: 24px;
+      pointer-events: none;
     }
 
-    .hero-badge strong {
-      display: block;
-      font-size: 22px;
+    .hero-card img {
+      width: 110px;
+      margin-bottom: 20px;
+      filter: drop-shadow(0 0 12px rgba(212,175,55,0.18));
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-card h3 {
+      color: var(--gold);
+      font-size: 28px;
+      margin-bottom: 12px;
       font-family: 'Cinzel', serif;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-card p {
+      font-size: 16px;
+      color: var(--muted);
+      margin-bottom: 22px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 18px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .stat {
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(212,175,55,0.16);
+      text-align: center;
+    }
+
+    .stat strong {
+      display: block;
+      color: var(--gold);
+      font-size: 24px;
+      margin-bottom: 6px;
+      font-family: 'Cinzel', serif;
+    }
+
+    .heritage-strip {
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(90deg, rgba(125,31,44,0.22), rgba(212,175,55,0.06), rgba(125,31,44,0.22));
+    }
+
+    .heritage-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      padding: 22px 0;
+      text-align: center;
+    }
+
+    .heritage-item strong {
+      display: block;
+      color: var(--gold);
+      font-family: 'Cinzel', serif;
+      font-size: 20px;
       margin-bottom: 6px;
     }
 
-    .motif {
-      position: absolute;
-      inset: 0;
-      pointer-events: none;
-      opacity: 0.1;
-      background-image: radial-gradient(circle at 15% 20%, var(--soft-gold) 0 2px, transparent 3px), radial-gradient(circle at 70% 35%, var(--soft-gold) 0 2px, transparent 3px), radial-gradient(circle at 35% 78%, var(--soft-gold) 0 2px, transparent 3px);
-      background-size: 220px 220px;
+    .heritage-item span {
+      color: var(--muted);
+      font-size: 14px;
     }
 
     .section {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 30px 20px 16px;
+      padding: 85px 0;
     }
 
     .section-title {
       text-align: center;
-      margin-bottom: 22px;
+      margin-bottom: 45px;
     }
 
-    .section-title .overline {
-      color: var(--maroon);
-      text-transform: uppercase;
-      letter-spacing: 0.24em;
-      font-size: 12px;
-      font-weight: 700;
-      margin-bottom: 10px;
-    }
-
-    .section-title h2 {
-      font-family: 'Cinzel', serif;
+    .section-title h3 {
       font-size: 42px;
-      margin: 0;
-      color: var(--brown);
+      color: var(--gold);
+      margin-bottom: 10px;
+      font-family: 'Cinzel', serif;
     }
 
     .section-title p {
-      max-width: 680px;
-      margin: 12px auto 0;
-      line-height: 1.7;
-      color: #6e5743;
+      color: var(--muted);
+      max-width: 700px;
+      margin: auto;
     }
 
-    .features {
+    .collections {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-      margin-top: 8px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
     }
 
-    .feature {
+    .collection-card,
+    .product-card,
+    .about-box,
+    .craft-card {
       background: var(--card);
-      border: 1px solid rgba(111,16,32,0.08);
-      padding: 22px;
-      border-radius: 20px;
-      box-shadow: 0 10px 24px rgba(46, 20, 5, 0.05);
-    }
-
-    .feature h3 {
-      margin: 10px 0 8px;
-      font-size: 18px;
-      color: var(--maroon);
-    }
-
-    .feature p {
-      margin: 0;
-      color: #705b47;
-      line-height: 1.6;
-      font-size: 14px;
-    }
-
-    .category-grid,
-    .product-grid {
-      display: grid;
-      gap: 22px;
-    }
-
-    .category-grid {
-      grid-template-columns: repeat(4, 1fr);
-      margin-top: 22px;
-    }
-
-    .category-card {
+      border: 1px solid var(--border);
       border-radius: 24px;
       overflow: hidden;
-      position: relative;
-      min-height: 340px;
-      box-shadow: var(--shadow);
-      background-size: cover;
-      background-position: center;
-      isolation: isolate;
+      transition: 0.35s ease;
     }
 
-    .category-card::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg, rgba(27,13,6,0.08), rgba(27,13,6,0.74));
-      z-index: -1;
+    .collection-card:hover,
+    .product-card:hover,
+    .about-box:hover,
+    .craft-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.28);
     }
 
-    .category-card .content {
-      position: absolute;
-      left: 24px;
-      right: 24px;
-      bottom: 24px;
-      color: white;
-    }
-
-    .category-card h3 {
-      font-family: 'Cinzel', serif;
-      font-size: 28px;
-      margin: 0 0 8px;
-    }
-
-    .category-card span {
-      font-size: 14px;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: #f4dbab;
-    }
-
-    .banner {
-      margin-top: 30px;
-      padding: 44px;
-      border-radius: 30px;
-      color: white;
-      background:
-        linear-gradient(90deg, rgba(78,9,21,0.9), rgba(111,16,32,0.74)),
-        url('https://images.unsplash.com/photo-1583391733981-8498408d6d85?auto=format&fit=crop&w=1400&q=80') center/cover;
-      box-shadow: var(--shadow);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 24px;
-      flex-wrap: wrap;
-    }
-
-    .banner h3 {
-      font-family: 'Cinzel', serif;
-      font-size: 40px;
-      margin: 0 0 10px;
-    }
-
-    .banner p {
-      margin: 0;
-      color: #f2e6d6;
-      line-height: 1.7;
-      max-width: 620px;
-    }
-
-    .product-grid {
-      grid-template-columns: repeat(4, 1fr);
-      margin-top: 22px;
-    }
-
-    .product-card {
-      background: rgba(255,255,255,0.76);
-      border-radius: 22px;
-      overflow: hidden;
-      border: 1px solid rgba(111,16,32,0.08);
-      box-shadow: 0 12px 30px rgba(60, 25, 8, 0.07);
-    }
-
-    .product-image {
+    .collection-card img,
+    .product-card img {
+      width: 100%;
       height: 320px;
-      background-size: cover;
-      background-position: center;
+      object-fit: cover;
     }
 
-    .product-info {
-      padding: 18px;
+    .card-content {
+      padding: 24px;
     }
 
-    .product-info h4 {
-      margin: 0 0 8px;
-      font-size: 18px;
+    .card-content h4 {
+      font-size: 25px;
+      color: var(--gold-soft);
+      margin-bottom: 10px;
+      font-family: 'Cinzel', serif;
     }
 
-    .product-info p {
-      margin: 0 0 12px;
-      color: #79624c;
-      font-size: 14px;
-      line-height: 1.6;
+    .card-content p {
+      color: var(--muted);
+      margin-bottom: 16px;
     }
 
-    .price-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-    }
-
-    .price {
-      color: var(--maroon);
-      font-weight: 800;
-      font-size: 18px;
-    }
-
-    .mini-btn {
-      padding: 10px 14px;
-      border-radius: 999px;
-      background: var(--maroon);
-      color: white;
-      font-size: 13px;
+    .link-btn {
+      color: var(--gold);
       font-weight: 700;
     }
 
-    .story {
+    .craft-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 26px;
-      align-items: center;
-      margin-top: 18px;
-    }
-
-    .story-image {
-      min-height: 460px;
-      border-radius: 30px;
-      background: url('https://images.unsplash.com/photo-1599733589046-8337f0f66d22?auto=format&fit=crop&w=1200&q=80') center/cover;
-      box-shadow: var(--shadow);
-    }
-
-    .story-copy {
-      background: rgba(255,255,255,0.64);
-      border: 1px solid rgba(111,16,32,0.08);
-      border-radius: 30px;
-      padding: 38px;
-      box-shadow: 0 12px 30px rgba(60, 25, 8, 0.06);
-    }
-
-    .story-copy h3 {
-      font-family: 'Cinzel', serif;
-      font-size: 40px;
-      margin: 0 0 16px;
-      color: var(--brown);
-    }
-
-    .story-copy p {
-      margin: 0 0 16px;
-      line-height: 1.9;
-      color: #6c5744;
-    }
-
-    .story-points {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 16px;
-      margin-top: 26px;
-    }
-
-    .point {
-      background: #fffaf3;
-      border-radius: 18px;
-      padding: 16px;
-      border: 1px solid rgba(199,154,59,0.22);
-    }
-
-    .point strong {
-      display: block;
-      color: var(--maroon);
-      margin-bottom: 6px;
-    }
-
-    .newsletter {
-      margin: 36px auto 60px;
-      max-width: 1200px;
-      padding: 0 20px;
-    }
-
-    .newsletter-box {
-      border-radius: 30px;
-      padding: 42px;
-      background: linear-gradient(135deg, #fff8ef, #f1e3cf);
-      border: 1px solid rgba(111,16,32,0.08);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      grid-template-columns: repeat(3, 1fr);
       gap: 24px;
-      flex-wrap: wrap;
+      margin-top: 10px;
     }
 
-    .newsletter-box h3 {
+    .craft-card {
+      padding: 28px;
+      background: linear-gradient(180deg, #151515, #101010);
+    }
+
+    .craft-card h4 {
+      color: var(--gold-soft);
+      font-size: 24px;
+      margin-bottom: 10px;
       font-family: 'Cinzel', serif;
-      font-size: 34px;
-      margin: 0 0 10px;
-      color: var(--maroon);
     }
 
-    .newsletter-form {
+    .craft-card p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+    }
+
+    .product-card .card-content h4 {
+      font-size: 20px;
+    }
+
+    .price {
       display: flex;
       gap: 12px;
-      flex-wrap: wrap;
+      align-items: center;
+      margin: 10px 0 18px;
     }
 
-    .newsletter-form input {
-      min-width: 280px;
-      padding: 15px 18px;
-      border-radius: 999px;
-      border: 1px solid rgba(111,16,32,0.15);
+    .price .new {
+      color: var(--gold);
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .price .old {
+      color: #8f8578;
+      text-decoration: line-through;
+    }
+
+    .small-btn {
+      width: 100%;
+      padding: 12px;
+      border-radius: 14px;
+      border: 1px solid var(--gold);
+      background: transparent;
+      color: var(--gold);
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .small-btn:hover {
+      background: var(--gold);
+      color: var(--black);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      align-items: stretch;
+    }
+
+    .about-image img {
+      width: 100%;
+      height: 100%;
+      min-height: 520px;
+      object-fit: cover;
+      border-radius: 24px;
+      border: 1px solid var(--border);
+    }
+
+    .about-content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .about-box {
+      padding: 28px;
+    }
+
+    .about-box h4 {
+      color: var(--gold);
+      margin-bottom: 10px;
+      font-size: 24px;
+      font-family: 'Cinzel', serif;
+    }
+
+    .about-box p {
+      color: var(--muted);
+    }
+
+    .contact {
+      background: linear-gradient(180deg, #111 0%, #0b0b0b 100%);
+      border-top: 1px solid var(--border);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      align-items: start;
+    }
+
+    .contact-info h3 {
+      font-size: 42px;
+      color: var(--gold);
+      margin-bottom: 15px;
+      font-family: 'Cinzel', serif;
+    }
+
+    .contact-info p {
+      color: var(--muted);
+      margin-bottom: 12px;
+      max-width: 560px;
+    }
+
+    form {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 28px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      margin-bottom: 16px;
+      padding: 15px 16px;
+      background: #0f0f0f;
+      color: var(--ivory);
+      border: 1px solid rgba(212,175,55,0.18);
+      border-radius: 14px;
       font-size: 15px;
       outline: none;
     }
 
+    input:focus,
+    textarea:focus {
+      border-color: var(--gold);
+    }
+
     footer {
-      background: linear-gradient(180deg, #4e0915, #33040d);
-      color: #f7ead8;
-      padding: 50px 20px 26px;
-    }
-
-    .footer-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1.2fr 1fr 1fr 1fr;
-      gap: 28px;
-    }
-
-    .footer-brand h3 {
-      font-family: 'Cinzel', serif;
-      font-size: 34px;
-      margin: 0 0 8px;
-    }
-
-    .footer-brand p,
-    .footer-col a {
-      color: #efd9c0;
-      line-height: 1.8;
-      font-size: 14px;
-    }
-
-    .footer-col h4 {
-      margin: 0 0 12px;
-      color: var(--soft-gold);
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      font-size: 12px;
-    }
-
-    .footer-col {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-
-    .copyright {
-      max-width: 1200px;
-      margin: 24px auto 0;
-      padding-top: 18px;
-      border-top: 1px solid rgba(255,255,255,0.1);
+      border-top: 1px solid var(--border);
       text-align: center;
-      color: #dcbf9a;
-      font-size: 13px;
+      padding: 24px 0;
+      color: #ab9f91;
+      font-size: 14px;
+      font-family: 'Noto Sans Devanagari', sans-serif;
     }
 
-    @media (max-width: 1100px) {
-      .hero-card,
-      .story,
-      .footer-inner,
-      .features,
-      .category-grid,
-      .product-grid {
+    .floating-whatsapp {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      z-index: 999;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, #25d366, #1da851);
+      color: white;
+      font-size: 28px;
+      box-shadow: 0 12px 26px rgba(0,0,0,0.28);
+    }
+
+    @media (max-width: 1024px) {
+      .hero-grid,
+      .collections,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .products {
         grid-template-columns: repeat(2, 1fr);
       }
 
-      .hero-card {
-        min-height: auto;
+      .craft-grid,
+      .heritage-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .hero h2 {
+        font-size: 50px;
       }
     }
 
-    @media (max-width: 760px) {
-      .nav {
-        flex-direction: column;
+    @media (max-width: 768px) {
+      nav {
+        display: none;
       }
 
-      .menu {
-        gap: 14px;
-      }
-
-      .hero-card,
-      .features,
-      .category-grid,
-      .product-grid,
-      .story,
-      .story-points,
-      .footer-inner {
+      .hero-grid,
+      .collections,
+      .products,
+      .about-grid,
+      .contact-grid,
+      .stats,
+      .craft-grid,
+      .heritage-grid {
         grid-template-columns: 1fr;
       }
 
-      .hero-copy {
-        padding: 48px 26px;
+      .hero {
+        min-height: auto;
+        background-position: center top;
       }
 
-      h1 { font-size: 44px; }
-      .section-title h2,
-      .banner h3,
-      .story-copy h3,
-      .newsletter-box h3 { font-size: 30px; }
-      .banner,
-      .newsletter-box,
-      .story-copy { padding: 28px; }
-      .hero-visual { min-height: 420px; }
-      .newsletter-form input { min-width: 100%; }
+      .hero-card {
+        margin-top: 10px;
+      }
+
+      .hero h2 {
+        font-size: 38px;
+      }
+
+      .section-title h3 {
+        font-size: 30px;
+      }
+
+      .contact-info h3 {
+        font-size: 32px;
+      }
+
+      .brand-text h1 {
+        font-size: 22px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="topbar">Free Shipping Above ₹1999 • Handcrafted Indian Elegance • COD Available</div>
 
   <header>
-    <nav class="nav">
-      <div class="brand-wrap">
-        <div class="horse-logo" aria-label="Aasho horse logo animation">
-          <img src="IMG_9219.PNG" alt="Aasho horse logo" />
+    <div class="container navbar">
+      <div class="brand">
+        <img src="logo2.PNG" alt="AASHO Logo" class="brand-logo" />
+        <div class="brand-text">
+          <h1>AASHO</h1>
+          <p>परंपरा, सरलता के साथ</p>
         </div>
-        <div class="brand">aasho<small>rooted in tradition</small></div>
       </div>
-      <div class="menu">
+
+      <nav>
         <a href="#home">Home</a>
-        <a href="#categories">Collections</a>
-        <a href="#new-arrivals">New Arrivals</a>
-        <a href="#story">Our Story</a>
+        <a href="#collections">Collections</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
         <a href="#contact">Contact</a>
-      </div>
-      <div class="actions">
-        <a class="icon-btn" href="#">Search</a>
-        <a class="icon-btn" href="#">Wishlist</a>
-        <a class="icon-btn" href="#">Cart</a>
-      </div>
-    </nav>
+        <a href="#contact" class="nav-btn">Shop Now</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-card">
-        <div class="motif"></div>
-        <div class="hero-copy">
-          <div class="eyebrow">Festive • Bridal • Heritage Wear</div>
-          <h1>Celebrate Tradition, Wear Timeless Grace.</h1>
-          <p>
-            Discover sarees, lehengas, kurta sets, and handcrafted ethnic wear inspired by Indian artistry,
-            woven for celebrations, weddings, and every cherished occasion.
-          </p>
-          <div class="hero-buttons">
-            <a href="#categories" class="btn btn-primary">Shop Collection</a>
-            <a href="#story" class="btn btn-secondary">Explore Our Story</a>
-          </div>
-        </div>
-        <div class="hero-visual">
-          <div class="hero-horse">
-            <img src="IMG_9219.PNG" alt="Animated Aasho horse emblem" />
-          </div>
-          <div class="hero-badge">
-            <strong>New Festive Edit</strong>
-            Handpicked silhouettes in rich maroon, gold, and ivory tones.
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="features">
-        <div class="feature">
-          <h3>Authentic Weaves</h3>
-          <p>Traditional Indian textiles, elegant details, and craftsmanship inspired by heritage styles.</p>
-        </div>
-        <div class="feature">
-          <h3>Premium Finishing</h3>
-          <p>Thoughtful embroidery, festive color palettes, and luxurious silhouettes for modern celebrations.</p>
-        </div>
-        <div class="feature">
-          <h3>Pan India Delivery</h3>
-          <p>Secure shipping, easy returns, and smooth shopping support for your festive wardrobe.</p>
-        </div>
-        <div class="feature">
-          <h3>Wedding Ready</h3>
-          <p>Curated pieces for bridesmaids, family events, pujas, receptions, and seasonal occasions.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="categories">
-      <div class="section-title">
-        <div class="overline">Shop by Collection</div>
-        <h2>Traditional Styles for Every Celebration</h2>
-        <p>From graceful sarees to statement lehengas, Aasho brings a refined blend of heritage motifs and modern elegance.</p>
-      </div>
-
-      <div class="category-grid">
-        <a class="category-card" href="#" style="background-image:url('https://images.unsplash.com/photo-1610030469668-7f9d6bfc0d77?auto=format&fit=crop&w=900&q=80')">
-          <div class="content">
-            <span>Explore</span>
-            <h3>Sarees</h3>
-          </div>
-        </a>
-        <a class="category-card" href="#" style="background-image:url('https://images.unsplash.com/photo-1610047402714-9e1f4f48c6c0?auto=format&fit=crop&w=900&q=80')">
-          <div class="content">
-            <span>Explore</span>
-            <h3>Lehengas</h3>
-          </div>
-        </a>
-        <a class="category-card" href="#" style="background-image:url('https://images.unsplash.com/photo-1597983073493-88cd35cf93b0?auto=format&fit=crop&w=900&q=80')">
-          <div class="content">
-            <span>Explore</span>
-            <h3>Kurta Sets</h3>
-          </div>
-        </a>
-        <a class="category-card" href="#" style="background-image:url('https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=900&q=80')">
-          <div class="content">
-            <span>Explore</span>
-            <h3>Dupattas</h3>
-          </div>
-        </a>
-      </div>
-
-      <div class="banner">
-        <div>
-          <h3>Wedding & Festive Collection</h3>
-          <p>Grace your special moments with regal silhouettes, heirloom-inspired embroidery, and rich festive colors crafted for celebration.</p>
-        </div>
-        <a href="#new-arrivals" class="btn btn-primary">View New Arrivals</a>
-      </div>
-    </section>
-
-    <section class="section" id="new-arrivals">
-      <div class="section-title">
-        <div class="overline">Fresh Picks</div>
-        <h2>New Arrivals</h2>
-        <p>Elegant statement pieces designed for festive evenings, traditional ceremonies, and timeless wardrobe essentials.</p>
-      </div>
-
-      <div class="product-grid">
-        <div class="product-card">
-          <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80')"></div>
-          <div class="product-info">
-            <h4>Banarasi Silk Saree</h4>
-            <p>Rich woven texture with festive gold detailing.</p>
-            <div class="price-row">
-              <span class="price">₹4,499</span>
-              <a href="#" class="mini-btn">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="product-card">
-          <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1583391733981-8498408d6d85?auto=format&fit=crop&w=800&q=80')"></div>
-          <div class="product-info">
-            <h4>Zari Lehenga Set</h4>
-            <p>Bridal-inspired elegance in maroon and antique gold.</p>
-            <div class="price-row">
-              <span class="price">₹8,999</span>
-              <a href="#" class="mini-btn">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="product-card">
-          <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1599733589046-8337f0f66d22?auto=format&fit=crop&w=800&q=80')"></div>
-          <div class="product-info">
-            <h4>Chikankari Suit Set</h4>
-            <p>Soft elegance for festive daytime and family gatherings.</p>
-            <div class="price-row">
-              <span class="price">₹3,299</span>
-              <a href="#" class="mini-btn">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="product-card">
-          <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1610030469668-7f9d6bfc0d77?auto=format&fit=crop&w=800&q=80')"></div>
-          <div class="product-info">
-            <h4>Kanjivaram Saree</h4>
-            <p>Classic drape with a royal heritage-inspired finish.</p>
-            <div class="price-row">
-              <span class="price">₹5,999</span>
-              <a href="#" class="mini-btn">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="story">
-      <div class="section-title">
-        <div class="overline">The Aasho Story</div>
-        <h2>Tradition Crafted for Today</h2>
-      </div>
-
-      <div class="story">
-        <div class="story-image"></div>
-        <div class="story-copy">
-          <h3>Inspired by Indian Heritage</h3>
-          <p>
-            Aasho is a celebration of Indian tradition, textiles, and festive beauty. Every collection is designed to carry the richness of our cultural roots while feeling graceful, modern, and wearable for today.
-          </p>
-          <p>
-            From wedding wardrobes to elegant festive dressing, Aasho brings together intricate craftsmanship, regal color stories, and timeless silhouettes made to be treasured.
-          </p>
-          <div class="story-points">
-            <div class="point">
-              <strong>Craftsmanship</strong>
-              Detailed embroidery and premium finishing inspired by artisan traditions.
-            </div>
-            <div class="point">
-              <strong>Premium Fabrics</strong>
-              Carefully chosen materials with a soft, luxurious drape and festive appeal.
-            </div>
-            <div class="point">
-              <strong>Occasion Wear</strong>
-              Perfect for weddings, festivals, pujas, receptions, and family celebrations.
-            </div>
-            <div class="point">
-              <strong>Elegant Identity</strong>
-              A refined traditional brand presence with a rich Indian visual language.
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <section class="newsletter" id="contact">
-    <div class="newsletter-box">
+  <section class="hero" id="home">
+    <div class="container hero-grid">
       <div>
-        <h3>Join the Aasho Circle</h3>
-        <p>Get updates on new festive collections, bridal edits, and exclusive seasonal launches.</p>
+        <span class="tag">Indian Traditional Luxury Brand</span>
+        <h2>Indian Tradition, <span>Styled with Royal Elegance</span></h2>
+        <p>
+          AASHO is designed for the beauty of Indian tradition — sarees, khadi, linen, and natural fabrics presented with grace, festive richness, and timeless craftsmanship for weddings, celebrations, and elegant everyday wear.
+        </p>
+        <p class="editorial-note">परंपरा, सरलता के साथ — crafted for the modern Indian woman.</p>
+
+        <div class="hero-actions">
+          <a href="#products" class="btn btn-primary">Explore Collection</a>
+          <a href="#about" class="btn btn-secondary">Our Story</a>
+        </div>
       </div>
-      <form class="newsletter-form">
-        <input type="email" placeholder="Enter your email address" />
-        <button class="btn btn-primary" type="submit">Subscribe</button>
+
+      <div class="hero-card">
+        <img src="images/logo.png" alt="AASHO Horse Logo" />
+        <h3>AASHO</h3>
+        <p>
+          A premium Indian traditional fashion identity inspired by royal heritage, handcrafted beauty, festive dressing, and the quiet luxury of timeless textiles.
+        </p>
+
+        <div class="stats">
+          <div class="stat">
+            <strong>Sarees</strong>
+            <span>Festive elegance</span>
+          </div>
+          <div class="stat">
+            <strong>Khadi</strong>
+            <span>Heritage craft</span>
+          </div>
+          <div class="stat">
+            <strong>Linen</strong>
+            <span>Timeless luxury</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="heritage-strip">
+    <div class="container heritage-grid">
+      <div class="heritage-item">
+        <strong>Traditional</strong>
+        <span>Rooted in Indian culture</span>
+      </div>
+      <div class="heritage-item">
+        <strong>Festive</strong>
+        <span>Perfect for weddings & occasions</span>
+      </div>
+      <div class="heritage-item">
+        <strong>Artisanal</strong>
+        <span>Inspired by handcraft traditions</span>
+      </div>
+      <div class="heritage-item">
+        <strong>Premium</strong>
+        <span>Luxury with elegance</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="collections">
+    <div class="container">
+      <div class="section-title">
+        <h3>Our Signature Collections</h3>
+        <p>Designed for the Indian traditional brand space with royal sarees, elegant festive wear, and refined natural fabric collections.</p>
+      </div>
+
+      <div class="collections">
+        <div class="collection-card">
+          <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80" alt="Khadi Collection" />
+          <div class="card-content">
+            <h4>Khadi Collection</h4>
+            <p>Classic silhouettes rooted in handmade beauty and authentic Indian craftsmanship.</p>
+            <a href="#products" class="link-btn">View Collection →</a>
+          </div>
+        </div>
+
+        <div class="collection-card">
+          <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=900&q=80" alt="Linen Collection" />
+          <div class="card-content">
+            <h4>Linen Collection</h4>
+            <p>Light, breathable, and beautifully tailored pieces for effortless luxury.</p>
+            <a href="#products" class="link-btn">View Collection →</a>
+          </div>
+        </div>
+
+        <div class="collection-card">
+          <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=80" alt="Natural Fabrics" />
+          <div class="card-content">
+            <h4>Natural Fabrics</h4>
+            <p>Soft, earthy, comfortable fashion inspired by simplicity and refined living.</p>
+            <a href="#products" class="link-btn">View Collection →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="craft" style="padding-top: 0;">
+    <div class="container">
+      <div class="section-title">
+        <h3>Crafted for Indian Celebrations</h3>
+        <p>Your brand can speak to weddings, festive occasions, family gatherings, and timeless traditional dressing.</p>
+      </div>
+
+      <div class="craft-grid">
+        <div class="craft-card">
+          <h4>Wedding Sarees</h4>
+          <p>Grand drapes, zari work, elegant borders, and rich colors that feel premium for bridal events and special ceremonies.</p>
+        </div>
+
+        <div class="craft-card">
+          <h4>Festive Edit</h4>
+          <p>Curated traditional looks for Diwali, pooja, mehendi, receptions, and Indian celebrations with a refined luxury mood.</p>
+        </div>
+
+        <div class="craft-card">
+          <h4>Heritage Fabrics</h4>
+          <p>Khadi, linen, and natural textures presented in a modern premium format while keeping the soul of Indian textile heritage.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="products" style="background:#101010; border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+    <div class="container">
+      <div class="section-title">
+        <h3>Featured Products</h3>
+        <p>Showcase your premium sarees, festive wear, khadi pieces, and elegant handcrafted looks with real product images and pricing.</p>
+      </div>
+
+      <div class="products">
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=900&q=80" alt="Sea Green Embroidered Saree" />
+          <div class="card-content">
+            <h4>Sea Green Embroidered Saree</h4>
+            <div class="price">
+              <span class="new">₹3,899</span>
+              <span class="old">₹4,499</span>
+            </div>
+            <button class="small-btn">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=900&q=80" alt="Classic Khadi Festive Set" />
+          <div class="card-content">
+            <h4>Classic Khadi Festive Set</h4>
+            <div class="price">
+              <span class="new">₹2,799</span>
+              <span class="old">₹2,899</span>
+            </div>
+            <button class="small-btn">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80" alt="Natural Linen Celebration Set" />
+          <div class="card-content">
+            <h4>Natural Linen Celebration Set</h4>
+            <div class="price">
+              <span class="new">₹1,599</span>
+              <span class="old">₹2,099</span>
+            </div>
+            <button class="small-btn">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80" alt="Royal Border Occasion Saree" />
+          <div class="card-content">
+            <h4>Royal Border Occasion Saree</h4>
+            <div class="price">
+              <span class="new">₹2,799</span>
+              <span class="old">₹3,399</span>
+            </div>
+            <button class="small-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container about-grid">
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1495385794356-15371f348c31?auto=format&fit=crop&w=1200&q=80" alt="AASHO About" />
+      </div>
+
+      <div class="about-content">
+        <div class="about-box">
+          <h4>About AASHO</h4>
+          <p>
+            AASHO is a premium Indian traditional fashion label built around sarees, heritage fabrics, festive elegance, and graceful silhouettes. The brand is made to feel rooted, refined, and proudly Indian.
+          </p>
+        </div>
+
+        <div class="about-box">
+          <h4>Brand Philosophy</h4>
+          <p>
+            Our identity reflects royal confidence, festive beauty, and rooted tradition. Every collection should feel luxurious, feminine, elegant, and deeply connected to Indian textile culture.
+          </p>
+        </div>
+
+        <div class="about-box">
+          <h4>Tagline</h4>
+          <p><strong style="color: var(--gold);">परंपरा, सरलता के साथ</strong></p>
+          <p>This line beautifully expresses tradition with elegance and simplicity.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <h3>Let’s Build Your Fashion Presence</h3>
+        <p>Use this section for customer enquiries, bridal styling requests, festive orders, boutique partnerships, and WhatsApp shopping leads.</p>
+        <p><strong style="color:var(--gold)">Brand:</strong> AASHO</p>
+        <p><strong style="color:var(--gold)">Focus:</strong> Sarees, Khadi, Linen, Naturals</p>
+        <p><strong style="color:var(--gold)">Style:</strong> Traditional, Premium, Royal</p>
+      </div>
+
+      <form>
+        <input type="text" placeholder="Your Name" />
+        <input type="email" placeholder="Email Address" />
+        <input type="text" placeholder="Phone Number" />
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button type="submit" class="btn btn-primary" style="width:100%; cursor:pointer;">Send Message</button>
       </form>
     </div>
   </section>
 
   <footer>
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <h3>aasho</h3>
-        <p>Rooted in tradition, styled for celebration. Ethnic wear designed with timeless grace and festive elegance.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Shop</h4>
-        <a href="#">Sarees</a>
-        <a href="#">Lehengas</a>
-        <a href="#">Kurta Sets</a>
-        <a href="#">Dupattas</a>
-      </div>
-      <div class="footer-col">
-        <h4>Help</h4>
-        <a href="#">Shipping & Delivery</a>
-        <a href="#">Returns</a>
-        <a href="#">Size Guide</a>
-        <a href="#">Contact Us</a>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <a href="mailto:hello@aasho.com">hello@aasho.com</a>
-        <a href="tel:+919999999999">+91 99999 99999</a>
-        <a href="#">Instagram</a>
-        <a href="#">Pinterest</a>
-      </div>
+    <div class="container">
+      © 2026 AASHO. All Rights Reserved. | परंपरा, सरलता के साथ
     </div>
-    <div class="copyright">© 2026 Aasho. All rights reserved.</div>
   </footer>
+
+  <a href="#contact" class="floating-whatsapp" aria-label="WhatsApp">✆</a>
+
 </body>
+<!-- PASTE THIS JUST BEFORE </body> -->
+
+<audio id="bgMusic" loop>
+    <source src="sitar.mp3" type="audio/mpeg">
+  </audio>
+  
+  <script>
+  window.onload = function () {
+  
+    const music = document.getElementById("bgMusic");
+  
+    // start with zero volume
+    music.volume = 0.0;
+  
+    music.play().then(() => {
+  
+      // smooth fade in to 25%
+      let vol = 0;
+      const fade = setInterval(() => {
+        if (vol < 0.25) {
+          vol += 0.01;
+          music.volume = vol;
+        } else {
+          clearInterval(fade);
+        }
+      }, 250);
+  
+    }).catch(() => {
+      console.log("Autoplay blocked until user interacts.");
+    });
+  
+  };
+  </script>
 </html>
