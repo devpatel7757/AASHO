@@ -919,38 +919,47 @@
 
   <a href="#contact" class="floating-whatsapp" aria-label="WhatsApp">✆</a>
 
-</body>
-<!-- PASTE THIS JUST BEFORE </body> -->
-
-<audio id="bgMusic" loop>
+  <audio id="bgMusic" loop>
     <source src="sitar.mp3" type="audio/mpeg">
   </audio>
   
   <script>
-  window.onload = function () {
-  
+  function startMusic() {
     const music = document.getElementById("bgMusic");
+    const popup = document.getElementById("musicStarter");
   
-    // start with zero volume
-    music.volume = 0.0;
+    music.volume = 0.3;
   
     music.play().then(() => {
-  
-      // smooth fade in to 25%
-      let vol = 0;
-      const fade = setInterval(() => {
-        if (vol < 0.25) {
-          vol += 0.01;
-          music.volume = vol;
-        } else {
-          clearInterval(fade);
-        }
-      }, 250);
-  
-    }).catch(() => {
-      console.log("Autoplay blocked until user interacts.");
+      popup.style.display = "none";
+    }).catch((err) => {
+      alert("Music file not found or browser blocked playback.");
+      console.log(err);
     });
-  
-  };
+  }
   </script>
+
+</body>
+<div id="musicStarter" style="
+position:fixed;
+inset:0;
+background:rgba(0,0,0,0.75);
+display:flex;
+align-items:center;
+justify-content:center;
+z-index:9999;
+">
+  <button onclick="startMusic()" style="
+    padding:16px 28px;
+    font-size:18px;
+    border:none;
+    border-radius:40px;
+    background:gold;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+  ">
+    Enter with Music
+  </button>
+</div>
 </html>
