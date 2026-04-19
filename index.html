@@ -919,79 +919,60 @@
 
   <a href="#contact" class="floating-whatsapp" aria-label="WhatsApp">✆</a>
 
-  <audio id="bgMusic" loop>
-    <source src="sitar.mp3" type="audio/mpeg">
-  </audio>
+  <div id="musicPopup" style="
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.75);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+  ">
   
-  <script>
-  function startMusic() {
-    const music = document.getElementById("bgMusic");
-    const popup = document.getElementById("musicStarter");
+  <div style="
+  background:#111;
+  padding:40px;
+  border-radius:20px;
+  text-align:center;
+  max-width:420px;
+  width:90%;
+  color:white;
+  border:1px solid gold;
+  ">
   
-    music.volume = 0.3;
+  <h2 style="color:gold;">Welcome to AASHO</h2>
+  <p style="margin:15px 0;">Choose your experience</p>
   
-    music.play().then(() => {
-      popup.style.display = "none";
-    }).catch((err) => {
-      alert("Music file not found or browser blocked playback.");
-      console.log(err);
-    });
-  }
-  </script>
-<div id="musicPopup" style="
-position:fixed;
-inset:0;
-background:rgba(0,0,0,0.75);
-display:flex;
-justify-content:center;
-align-items:center;
-z-index:9999;
-">
-
-<div style="
-background:#111;
-padding:40px;
-border-radius:20px;
-text-align:center;
-max-width:420px;
-width:90%;
-color:white;
-border:1px solid gold;
-">
-
-<h2 style="color:gold;">Welcome to AASHO</h2>
-<p style="margin:15px 0;">Choose your experience</p>
-
-<button onclick="playMusic()" style="
-padding:12px 20px;
-margin:8px;
-border:none;
-border-radius:30px;
-background:gold;
-font-weight:bold;
-cursor:pointer;
-">
-Enter with Music
-</button>
-
-<button onclick="noMusic()" style="
-padding:12px 20px;
-margin:8px;
-border:none;
-border-radius:30px;
-background:#333;
-color:white;
-cursor:pointer;
-">
-Continue Silent
-</button>
-
-</div>
-</div>
+  <button onclick="playMusic()" style="
+  padding:12px 20px;
+  margin:8px;
+  border:none;
+  border-radius:30px;
+  background:gold;
+  font-weight:bold;
+  cursor:pointer;
+  ">
+  Enter with Music
+  </button>
+  
+  <button onclick="noMusic()" style="
+  padding:12px 20px;
+  margin:8px;
+  border:none;
+  border-radius:30px;
+  background:#333;
+  color:white;
+  cursor:pointer;
+  ">
+  Continue Silent
+  </button>
+  
+  </div>
+  </div>
 
 </body>
 <audio id="bgMusic" loop>
-    <source src="music/aasho-sitar.mp3" type="audio/mpeg">
+    <source src="sitar.mp3" type="audio/mpeg">
  </audio>
  
  <script>
@@ -1006,26 +987,4 @@ Continue Silent
     document.getElementById("musicPopup").style.display="none";
  }
  </script>
-<div id="musicStarter" style="
-position:fixed;
-inset:0;
-background:rgba(0,0,0,0.75);
-display:flex;
-align-items:center;
-justify-content:center;
-z-index:9999;
-">
-  <button onclick="startMusic()" style="
-    padding:16px 28px;
-    font-size:18px;
-    border:none;
-    border-radius:40px;
-    background:gold;
-    color:black;
-    font-weight:bold;
-    cursor:pointer;
-  ">
-    Enter with Music
-  </button>
-</div>
 </html>
